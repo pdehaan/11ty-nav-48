@@ -1,0 +1,15 @@
+---
+eleventyNavigation:
+  key: myParentKey
+---
+
+{%- set crumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) -%}
+
+<pre>{{ crumbs | inspect | safe }}</pre>
+
+<nav>
+  {% for crumb in crumbs %}
+    <a class="crumb" href="{{ crumb.url | url }}">{{ crumb.title }}</a>
+    ...
+  {% endfor %}
+</nav>
