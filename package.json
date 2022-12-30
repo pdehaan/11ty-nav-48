@@ -3,14 +3,21 @@
   "description": "",
   "version": "1.0.0",
   "author": "Peter deHaan <peter@deseloper.com>",
-  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-nav-48/issues"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-navigation": "^0.3.5"
   },
+  "homepage": "https://github.com/pdehaan/11ty-nav-48#readme",
   "keywords": [],
   "license": "MPL-2.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-nav-48.git"
+  },
   "scripts": {
     "build": "eleventy --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"
